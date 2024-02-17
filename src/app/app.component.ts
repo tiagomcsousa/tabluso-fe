@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { WelcomeComponent } from './components/main/welcome.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @Component({
   selector: 'app-root',
