@@ -1,0 +1,14 @@
+<div class="main">
+  <div class="text-center">Encontra aqui aquela música que queres tocar!</div>
+  <span class="p-input-icon-left">
+    <i class="pi pi-search"></i>
+    <input
+      pInputText
+      type="text"
+      class="p-inputtext-lg"
+      placeholder="Procurar música"
+      [(ngModel)]="searchText"
+      (keydown.enter)="handleSearch()"
+    />
+  </span>
+</div>

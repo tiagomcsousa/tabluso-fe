@@ -1,0 +1,21 @@
+<div *ngIf="tabsFound$ | async as tabsFound" class="container">
+  <h2>Tabs encontradas</h2>
+  <p-table *ngIf="tabsFound.length > 0; else noTabs" [value]="tabsFound">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Artista</th>
+        <th>Música</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-tab>
+      <tr>
+        <td>{{ tab.artist.name }}</td>
+        <td>{{ tab.song.name }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+
+<ng-template #noTabs>
+  <div>Nenhuma Tab encontrada!</div>
+</ng-template>

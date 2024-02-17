@@ -1,0 +1,11 @@
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+:host ::ng-deep {
+  .p-datatable .p-datatable-thead > tr > th {
+    color: white;
+    background-color: rgb(40, 40, 40);
+  }
+}

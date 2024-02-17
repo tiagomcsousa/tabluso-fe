@@ -1,0 +1,25 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.toolbar--title,
+.toolbar--options {
+  display: flex;
+}
+
+.toolbar--title {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.toolbar--options {
+  justify-content: flex-end;
+  font-size: 18px;
+
+  a:not(:last-child) {
+    margin-right: 30px;
+  }
+}

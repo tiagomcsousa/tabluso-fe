@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.text-center {
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
+}
